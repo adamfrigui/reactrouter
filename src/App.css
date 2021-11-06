@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  background-color: #282c34;
+}
+.App {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hello {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.movie-card {
+  width: 200px;
+  position: relative;
+  margin: 5px;
+  cursor: pointer;
+}
+.movie-card > img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+}
+
+.movie-stars {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.795);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.movie-card:hover > .movie-stars {
+  opacity: 1;
+  transition: 0.3s;
+  display: flex;
+}
+.inputSize {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 300px;
+  height: 30px;
+}
+.starSize {
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.form-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form > input {
+  height: 30px;
+}
